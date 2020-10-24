@@ -55,22 +55,23 @@ footer{
 
 
 @-webkit-keyframes logo_wiggle{
-  from{top: 25px;}
-  to {top: 420px;}
+  from {width: 25px;}
+  to {width: 420px;}
   /*Your code here.*/
-
+  
 }
 
 @keyframes logo_wiggle{
-  from{top: 25px;}
-  to {top: 420px;}
+  from{width: 25px;}
+  to {width: 420px;}
+  
   /*Your code here.*/
 
 } 
 
 #logo{
   animation-duration: 15s;
-  animation-iteration-count:1;
+  animation-iteration-count: 1;
   animation-name: logo_wiggle;
   -webkit-animation-name: logo_wiggle;
    /*Your code here.*/
@@ -218,8 +219,32 @@ header{
     flex-basis: 200px;
   }
   /*Your code here again.*/
-  /*You will want four selectors*/  
+  /*You will want four selectors*/ 
+  body{
+    background-image: none;
+
+  }
+.pricing{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+
+}
+.gallery{
+  display: none;
+
+}
+#gallery {
+  display: none;
+}
+
+
 }
 
 /*Your code here again.*/ 
 /*Add media query to handle reduced-motion*/
+@media screen and (prefers-reduced-motion: reduce){
+  html{
+    scroll-behavior: auto;
+  }
+}
