@@ -243,8 +243,8 @@ header{
 
 /*Your code here again.*/ 
 /*Add media query to handle reduced-motion*/
-@media (prefers-reduced-motion: reduce){
+@media screen and (prefers-reduced-motion: reduce){
   #logo{
-    animation-iteration-count: 0;
+    animation-iteration-count: 0 !important;
   }
 }
